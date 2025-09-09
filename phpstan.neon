@@ -1,0 +1,17 @@
+includes:
+    - phar://phpstan.phar/conf/bleedingEdge.neon
+    - ./vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 9
+    paths:
+        - src
+        - Apps
+    excludePaths:
+        - src/Shared/Framework/Helpers/Pluralizer.php
+    fileExtensions:
+        - php
+    ignoreErrors:
+        - identifier: missingType.generics
+        - '#Trait .+ is used zero times and is not analysed#'
+
