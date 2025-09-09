@@ -8,7 +8,6 @@ use CoverManager\Core\RestaurantClient\Domain\Exceptions\SameClientException;
 use CoverManager\Core\RestaurantClient\Domain\Repositories\RestaurantClientRepositoryInterface;
 use CoverManager\Shared\Framework\Infrastructure\Bus\CommandBus\CommandHandlerInterface;
 use CoverManager\Shared\Framework\Infrastructure\Bus\EventBus\EventBusInterface;
-use CoverManager\Shared\Framework\Infrastructure\Logging\LoggerHelper;
 
 final readonly class UpdateRestaurantClientHandler implements CommandHandlerInterface
 {
